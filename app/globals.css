@@ -3,19 +3,28 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  --background: #171415;  
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #171415;
     --foreground: #ededed;
   }
+}
+
+@font-face {
+  font-family: 'Qanelas Soft';
+  src: url('/fonts/QanelasSoft-Regular.woff2') format('woff2'),
+       url('/fonts/QanelasSoft-Regular.woff') format('woff'),
+       url('/fonts/QanelasSoft-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Qanelas Soft', sans-serif;
 }
