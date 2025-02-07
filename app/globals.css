@@ -26,5 +26,5 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Qanelas Soft', sans-serif;
+  font-family: 'Qanelas Soft','inter', sans-serif;
 }
