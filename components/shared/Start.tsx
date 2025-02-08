@@ -1,5 +1,6 @@
 import Image from "next/image";
 import NavBar from "./NavBar";
+import { InstructorStats } from "../InstructorStats";
 const Start = () => {
   return (
     <div className="bg-[rgb(20,21,19)] text-white min-h-screen">
@@ -55,13 +56,34 @@ const Start = () => {
           </div>
           </section>
 
-          
+      <article className="flex gap-10 items-start p-10 mx-auto my-0 mt-36 rounded-2xl bg-black bg-opacity-30 max-w-full max-md:flex-col max-md:gap-6 max-md:p-6">
+      <div className="flex-1">
+        <h2 className="mb-2 text-4xl font-semibold text-white max-sm:text-3xl">
+          Sandeep Gupta
+        </h2>
+        <ul className="list-none p-0">
+          <li className="mb-1 text-base text-white opacity-90">
+            CAT/GMAT 100%iler
+          </li>
+          <li className="mb-1 text-base text-white opacity-90">
+            Rejected IIM-A and Harvard
+          </li>
+          <li className="mb-1 text-base text-white opacity-90">
+            CAT Trainer since 1996
+          </li>
+        </ul>
+        <InstructorStats />
+      </div>
+      <img
+        src="https://placehold.co/300x400/3A3A3A/3A3A3A"
+        className="object-cover rounded-lg bg-neutral-700 h-[400px] w-[300px] max-md:w-full max-md:h-[300px]"
+        alt="Instructor Sandeep Gupta"
+        loading="lazy"
+      />
+    </article>
         </div>
-          {/* Image Section */}
-          <section
-            className="bg-cover bg-center bg-no-repeat h-[300px] sm:h-[400px] lg:h-[500px] rounded-b-lg"
-            style={{ backgroundImage: "url('/sandeep2.png')" }}
-          />
+         
+         
         </div>
       </div>
    
