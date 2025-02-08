@@ -8,8 +8,8 @@ import TruthPage from "@/components/shared/TruthPage";
 
 export default function Home() {
   return (
-    <div className=" w-full bg-[rgb(20,21,19)] text-white">
-      {/* <Start /> */}
+    <div className=" w-full bg-[rgb(20,21,19)] text-white mt-50">
+      {/* <Start /> */} 
 
       <MafiaCard />
       {/* <TruthPage  /> */}
