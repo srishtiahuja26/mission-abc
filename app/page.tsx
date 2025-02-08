@@ -3,6 +3,7 @@
 import MafiaCard from "@/components/shared/MafiaCard";
 import Start from "@/components/shared/Start";
 import Stories from "@/components/shared/Stories";
+
 import TruthPage from "@/components/shared/TruthPage";
 
 
@@ -12,7 +13,7 @@ export default function Home() {
       {/* <Start /> */} 
 
       <MafiaCard />
-      {/* <TruthPage  /> */}
+       <TruthPage  /> 
       <Stories />
     </div>
   );
