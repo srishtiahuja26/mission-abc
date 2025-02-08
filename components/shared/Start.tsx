@@ -43,14 +43,14 @@ const Start = () => {
         <div className="bg-gray-800 p-8 rounded-lg flex max-w-4xl w-4/5 md:w-3/5 lg:w-2/3">
           <div className="text-white">
             <h2 className="text-3xl font-bold">Sandeep Gupta</h2>
-            <Image
+            {/* <Image
             src="/sandeep.png"
             alt="Logo"
             width={533}
             height={852}
             top = {-332px}
             left={1233px}
-            angle={-180 deg} />
+            angle={-180 deg} /> */}
 
 
             <p className="text-gray-400">
