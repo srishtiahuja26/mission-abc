@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 const Start = () => {
     return(
         <div className="bg-[rgb(20,21,19)] text-white">
-        <div className="px-12 sm:px-4 lg:px-6 border border-yellow-800 m-12 h-screen bg-gradient-to-b from-[rgba(20,21,19)] via-[rgb(70,67,61)] to-[rgba(20,21,20)] rounded-lg ">
+        <div className="px-12 sm:px-4 lg:px-6 border-t border-l border-r border-yellow-800 m-12 h-screen bg-gradient-to-b from-[rgba(20,21,19)] via-[rgb(70,67,61)] to-[rgba(20,21,20)] rounded-lg ">
         <nav className="flex justify-between items-center p-6">
         <div className="text-2xl font-bold font-qanleas-soft">
           {/* <p>mission</p> */}
@@ -38,54 +38,15 @@ const Start = () => {
           Start Now
         </button>
             </section>
-
-            <section className="flex justify-center py-12">
-        <div className="bg-gray-800 p-8 rounded-lg flex max-w-4xl w-4/5 md:w-3/5 lg:w-2/3">
-          <div className="text-white">
-            <h2 className="text-3xl font-bold">Sandeep Gupta</h2>
-            {/* <Image
-            src="/sandeep.png"
-            alt="Logo"
-            width={533}
-            height={852}
-            top = {-332px}
-            left={1233px}
-            angle={-180 deg} /> */}
-
-
-            <p className="text-gray-400">
-              CAT/GMAT 100%iler <br />
-              Rejected IIM-A and Harvard <br />
-              CAT Trainer since 1996
-            </p>
-            <div className="mt-6 flex gap-6">
-              <div>
-          <h3 className="text-yellow-500 font-bold text-xl">29 Years +</h3>
-          <p className="text-gray-400">of transforming lives</p>
-              </div>
-              <div>
-          <h3 className="text-yellow-500 font-bold text-xl">76,000 Hrs +</h3>
-          <p className="text-gray-400">Delivered onstage</p>
-              </div>
-              <div>
-          <h3 className="text-yellow-500 font-bold text-xl">100,000 Admits +</h3>
-          <p className="text-gray-400">to top schools & counting</p>
-              </div>
-            </div>
-          </div>
-          <div>
-            <Image
-              src="/sandeep-gupta.png"
-              alt="Sandeep Gupta"
-              width={300}
-              height={300}
-              className="rounded-lg"
-            />
-          </div>
-        </div>
+            <section
+              className="text-center py-10 bg-cover bg-center bg-no-repeat h-[500px]"
+              style={{ backgroundImage: "url('/sandeep2.png')" }}
+            >
             </section>
+          </div>
+       
             </div>
-            </div>
+        
     )
 }
 export default Start;
