@@ -1,30 +1,223 @@
+
+// mainnnnn:  export default function MafiaCard() {
+//   return (
+//     <div className="flex text-white min-h-screen w-full bg-[rgb(20,21,19)] justify-center items-center">
+//       {/* Main Container */}
+//       <div className="flex w-[1313px] h-[778px] mt-[91px] ml-[64px] relative">
+//         {/* Bookmark */}
+//         {/* <div className="absolute top-0 right-[calc(50%-20px)] w-10 h-14 bg-[#FBCE65] z-10" /> */}
+        
+//         {/* Left Section */}
+//         <div className="w-[656.5px] h-[778px] -mt-[80px] relative">
+//           <div className="w-full h-[618px] rounded-l-[12px] bg-[rgba(10,44,69,1)] py-[80px] flex flex-col justify-center gap-[10px] px-16">
+//             <h1 className="text-[64px] leading-[72px] font-bold">
+//               <span className="text-white">The </span>
+//               <span className="text-[#FFB85C]">CAT Mafia:</span>
+//               <br />
+//               <span className="text-white">Built on Lies</span>
+//             </h1>
+//             <p className="text-[#E5E5E5] mt-8 text-2xl leading-relaxed">
+//               False Promises. Fake Hope.
+//               <br />
+//               Endless Looting.
+//             </p>
+//           </div>
+//         </div>
+
+//         {/* Right Section */}
+//         <div className="w-[656.5px] h-[778px] -mt-[80px] relative">
+//           <div 
+//             className="w-full h-[618px] rounded-r-[12px] py-[80px] px-16 flex flex-col justify-center gap-[10px] relative bg-[rgba(29,30,28,0.6)] border-[rgba(251,206,101,1)] border-r-2 border-t-2 border-b-2"
+//           >
+//             {/* Bottom gradient overlay */}
+//             <div className="absolute inset-x-0 bottom-0 h-[300px]" style={{ 
+//               background: 'linear-gradient(180deg, rgba(25, 26, 25, 0) 0%, rgba(241, 188, 64, 0.24) 100%)'
+//             }} />
+            
+//             <h2 className="text-[#FBCE65] text-6xl font-semibold mb-8 relative z-10">01</h2>
+//             <div className="space-y-6 relative z-10">
+//               <p className="text-[#E5E5E5] text-2xl leading-relaxed">
+//                 Leave the entire CAT exam blank—you'll still outrank 60,000+ test-takers.
+//               </p>
+//               <p className="text-[#E5E5E5] text-2xl leading-relaxed">
+//                 Yet, every coaching center sells the same dream: IIM A, B, C—no matter your level.
+//               </p>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
+
+
+
+
+//  function MafiaCard1() {
+//   return (
+//     <div className="flex text-white min-h-screen w-full bg-[rgb(20,21,19)] justify-center items-center">
+//       {/* Main Container */}
+//       <div className="flex max-w-full relative">
+
+        
+//         {/* Left Section */}
+//         <div className="w-[656.5px] h-[778px] -mt-[80px] relative">
+//           {/* Vector 2520 */}
+//           <div className="absolute w-[41px] h-[66px] left-[525px] top-0 bg-[rgba(241,188,64,1)] z-10" />
+          
+//           {/* Rectangle 3464291 */}
+//           <div className="absolute w-[10px] h-[618px] left-[31px] bg-[rgba(19,68,104,1)]" />
+          
+//           <div className="w-full h-[618px] rounded-l-[12px] bg-[rgba(10,44,69,1)] py-[80px] flex flex-col justify-center gap-[10px] px-16">
+//             <h1 className="text-[64px] leading-[72px] font-bold">
+//               <span className="text-white">The </span>
+//               <span className="text-[#FFB85C]">CAT Mafia:</span>
+//               <br />
+//               <span className="text-white">Built on Lies</span>
+//             </h1>
+//             <p className="text-[#E5E5E5] mt-8 text-2xl leading-relaxed">
+//               False Promises. Fake Hope.
+//               <br />
+//               Endless Looting.
+//             </p>
+//           </div>
+//         </div>
+
+//         {/* Right Section */}
+//         <div className="w-[656.5px] h-[778px] -mt-[80px] relative">
+//           <div 
+//             className="w-full h-[618px] rounded-r-[12px] py-[80px] px-16 flex flex-col justify-center gap-[10px] relative bg-[rgba(29,30,28,0.6)] border-[rgba(251,206,101,1)] border-r-2 border-t-2 border-b-2"
+//           >
+//             {/* Bottom gradient overlay */}
+//             <div className="absolute inset-x-0 bottom-0 h-[300px]" style={{ 
+//               background: 'linear-gradient(180deg, rgba(25, 26, 25, 0) 0%, rgba(241, 188, 64, 0.24) 100%)'
+//             }} />
+            
+//             <h2 className="text-[#FBCE65] text-6xl font-semibold mb-8 relative z-10">01</h2>
+//             <div className="space-y-6 relative z-10">
+//               <p className="text-[#E5E5E5] text-2xl leading-relaxed">
+//                 Leave the entire CAT exam blank—you'll still outrank 60,000+ test-takers.
+//               </p>
+//               <p className="text-[#E5E5E5] text-2xl leading-relaxed">
+//                 Yet, every coaching center sells the same dream: IIM A, B, C—no matter your level.
+//               </p>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }
+
 export default function MafiaCard() {
-    return (
-      <div className="flex text-white min-h-screen w-full bg-[rgb(20,21,19)] justify-center items-center p-10">
-        {/* Main Container */}
-        <div className="flex w-full max-w-[1331px] h-[618px] rounded-lg shadow-lg overflow-hidden">
-          {/* Left Section */}
-          <div className="bg-[rgb(10,44,69)] p-8 flex-1 flex flex-col justify-center relative">
-            <div className="text-2xl font-bold font-qanelas">
-              <span className="text-yellow-800">CAT Mafia:</span> <br /> Built on Lies
-            </div>
-            <p className="text-grey-600 mt-4 text-sm">
-              False Promises. Fake Hope. <br /> Endless Looting.
-            </p>
-            <div className="absolute top-0 right-0 bg-yellow-800 h-6 w-4"></div>
-          </div>
-  
-          {/* Right Section */}
-          <div className="bg-[rgb(20,21,19)] p-8 flex-1 flex flex-col justify-center border-[rgb(251,206,101)] border-r-2 border-t-2 border-b-2">
-            <h2 className="text-[rgb(251,206,101)] text-lg font-semibold">01</h2>
-            <p className="text-sm text-grey-600 mt-4">
-              Leave the entire CAT exam blank—you’ll still outrank 60,000+ test-takers.
-            </p>
-            <p className="text-sm text-grey-600 mt-4">
-              Yet, every coaching center sells the same dream: IIM A, B, C—no matter your level.
+  return (
+    <div className="flex text-white min-h-screen w-full bg-[rgb(20,21,19)] justify-center items-center p-4 sm:p-6 lg:p-8">
+      {/* Main Container */}
+      <div className="flex flex-col lg:flex-row w-full max-w-[1313px] gap-0 relative">
+
+        
+        
+        {/* Left Section */}
+        <div className="w-full lg:w-[656.5px] h-[500px] sm:h-[550px] md:h-[600px] lg:h-[778px] lg:-mt-[80px] relative">
+          {/* Vector 2520 - Hidden on mobile */}
+          <div className="hidden lg:block absolute w-[41px] h-[66px] left-[525px] top-0 bg-[rgba(241,188,64,1)] z-10" />
+          
+          {/* Rectangle 3464291 */}
+          <div className="absolute w-[6px] sm:w-[8px] lg:w-[10px] h-full lg:h-[618px] left-[16px] sm:left-[24px] lg:left-[31px] bg-[rgba(19,68,104,1)]" />
+          
+          <div className="w-full h-full lg:h-[618px] rounded-t-[12px] lg:rounded-l-[12px] lg:rounded-tr-none bg-[rgba(10,44,69,1)] py-8 sm:py-10 lg:py-[80px] flex flex-col justify-center gap-[10px] px-6 sm:px-8 lg:px-16">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[72px] font-bold">
+              <span className="text-white">The </span>
+              <span className="text-[#FFB85C]">CAT Mafia:</span>
+              <br />
+              <span className="text-white">Built on Lies</span>
+            </h1>
+            <p className="text-[#E5E5E5] mt-4 lg:mt-8 text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
+              False Promises. Fake Hope.
+              <br />
+              Endless Looting.
             </p>
           </div>
         </div>
+
+        {/* Right Section */}
+        <div className="w-full lg:w-[656.5px] h-[500px] sm:h-[550px] md:h-[600px] lg:h-[778px] lg:-mt-[80px] relative">
+          <div 
+            className="w-full h-full lg:h-[618px] rounded-b-[12px] lg:rounded-r-[12px] lg:rounded-bl-none py-8 sm:py-10 lg:py-[80px] px-6 sm:px-8 lg:px-16 flex flex-col justify-center gap-[10px] relative bg-[rgba(29,30,28,0.6)] border-[rgba(251,206,101,1)] lg:border-r-2 lg:border-t-2 lg:border-b-2"
+          >
+            {/* Bottom gradient overlay */}
+            <div className="absolute inset-x-0 bottom-0 h-[200px] sm:h-[250px] lg:h-[300px]" style={{ 
+              background: 'linear-gradient(180deg, rgba(25, 26, 25, 0) 0%, rgba(241, 188, 64, 0.24) 100%)'
+            }} />
+            
+            <h2 className="text-[#FBCE65] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 lg:mb-8 relative z-10">01</h2>
+            <div className="space-y-4 lg:space-y-6 relative z-10">
+              <p className="text-[#E5E5E5] text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
+                Leave the entire CAT exam blank—you'll still outrank 60,000+ test-takers.
+              </p>
+              <p className="text-[#E5E5E5] text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed">
+                Yet, every coaching center sells the same dream: IIM A, B, C—no matter your level.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-    );
-  }
+    </div>
+  );
+}
+// export default function MafiaCard() {
+//   return (
+//     <div className="flex text-white min-h-screen w-full bg-[rgb(20,21,19)] justify-center items-center p-4 md:p-6 lg:p-8">
+//       {/* Main Container */}
+//       <div className="flex flex-col lg:flex-row w-full max-w-[1313px] gap-8 lg:gap-0 relative">
+
+        
+//         {/* Left Section */}
+//         <div className="w-full lg:w-[656.5px] min-h-[500px] lg:h-[778px] lg:-mt-[80px] relative">
+//           {/* Vector 2520 - Hidden on mobile */}
+//           <div className="hidden lg:block absolute w-[41px] h-[66px] left-[525px] top-0 bg-[rgba(241,188,64,1)] z-10" />
+          
+//           {/* Rectangle 3464291 */}
+//           <div className="absolute w-[10px] h-full lg:h-[618px] left-[31px] bg-[rgba(19,68,104,1)]" />
+          
+//           <div className="w-full h-full lg:h-[618px] rounded-t-[12px] lg:rounded-l-[12px] lg:rounded-tr-none bg-[rgba(10,44,69,1)] py-10 lg:py-[80px] flex flex-col justify-center gap-[10px] px-6 lg:px-16">
+//             <h1 className="text-4xl md:text-5xl lg:text-[64px] leading-tight lg:leading-[72px] font-bold">
+//               <span className="text-white">The </span>
+//               <span className="text-[#FFB85C]">CAT Mafia:</span>
+//               <br />
+//               <span className="text-white">Built on Lies</span>
+//             </h1>
+//             <p className="text-[#E5E5E5] mt-4 lg:mt-8 text-lg md:text-xl lg:text-2xl leading-relaxed">
+//               False Promises. Fake Hope.
+//               <br />
+//               Endless Looting.
+//             </p>
+//           </div>
+//         </div>
+
+//         {/* Right Section */}
+//         <div className="w-full lg:w-[656.5px] min-h-[500px] lg:h-[778px] lg:-mt-[80px] relative">
+//           <div 
+//             className="w-full h-full lg:h-[618px] rounded-b-[12px] lg:rounded-r-[12px] lg:rounded-bl-none py-10 lg:py-[80px] px-6 lg:px-16 flex flex-col justify-center gap-[10px] relative bg-[rgba(29,30,28,0.6)] border-[rgba(251,206,101,1)] lg:border-r-2 lg:border-t-2 lg:border-b-2"
+//           >
+//             {/* Bottom gradient overlay */}
+//             <div className="absolute inset-x-0 bottom-0 h-[300px]" style={{ 
+//               background: 'linear-gradient(180deg, rgba(25, 26, 25, 0) 0%, rgba(241, 188, 64, 0.24) 100%)'
+//             }} />
+            
+//             <h2 className="text-[#FBCE65] text-4xl md:text-5xl lg:text-6xl font-semibold mb-4 lg:mb-8 relative z-10">01</h2>
+//             <div className="space-y-4 lg:space-y-6 relative z-10">
+//               <p className="text-[#E5E5E5] text-lg md:text-xl lg:text-2xl leading-relaxed">
+//                 Leave the entire CAT exam blank—you'll still outrank 60,000+ test-takers.
+//               </p>
+//               <p className="text-[#E5E5E5] text-lg md:text-xl lg:text-2xl leading-relaxed">
+//                 Yet, every coaching center sells the same dream: IIM A, B, C—no matter your level.
+//               </p>
+//             </div>
+//           </div>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// }

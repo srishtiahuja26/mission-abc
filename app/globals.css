@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:wght@600&family=Playfair+Display:ital,wght@1,700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,13 +18,10 @@
 
 @font-face {
   font-family: 'Qanelas Soft';
-  src: url('/fonts/QanelasSoft-Regular.woff2') format('woff2'),
-       url('/fonts/QanelasSoft-Regular.woff') format('woff'),
-       url('/fonts/QanelasSoft-Regular.ttf') format('truetype');
-  font-weight: normal;
+  src: url('/fonts/QanelasSoft-SemiBold.woff2') format('woff2');
+  font-weight: 600;
   font-style: normal;
 }
-
 body {
   color: var(--foreground);
   background: var(--background);

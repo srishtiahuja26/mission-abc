@@ -6,8 +6,7 @@ import Start from "@/components/shared/Start";
 
 export default function Home() {
   return (
-    <div className="bg-[rgb(20,21,19)] text-white">
-      {/* Navigation Bar */}
+    <div className=" w-full bg-[rgb(20,21,19)] text-white">
       <Start />
 
       <MafiaCard />
