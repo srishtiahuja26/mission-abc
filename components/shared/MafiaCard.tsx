@@ -13,7 +13,7 @@ export default function MafiaCard() {
           {/* <div className="hidden lg:block absolute w-[41px] h-[66px] left-[525px] top-0 bg-[rgba(241,188,64,1)] z-10" /> */}
           <div className="hidden lg:block absolute left-[525px] top-0 z-10">
             <Image
-              src="/assests/icons/vector 2520.svg"
+              src="/assests/icons/Vector 2520.svg"
               alt="Vector"
               width={41}
               height={66}
