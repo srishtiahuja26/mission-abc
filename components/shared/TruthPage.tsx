@@ -3,15 +3,15 @@ import Image from 'next/image';
 
 const truthCards = [
   {
-    icon: '/assests/icons/star.svg',
+    icon: '/assests/icons/Star.svg',
     content: 'I turn away students who lack the hunger for IIM A, B, or C.'
   },
   {
-    icon: '/assests/icons/paisa.svg',
+    icon: '/assests/icons/Paisa.svg',
     content: "I won't take your money if you're not serious."
   },
   {
-    icon: '/assests/icons/mic.svg',
+    icon: '/assests/icons/Mic.svg',
     content: 'I believe in brutal honesty—not sugar-coated dreams.'
   }
 ];

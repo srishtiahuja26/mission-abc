@@ -1,5 +1,6 @@
 // pages/index.tsx
 
+import CatPrep from "@/components/shared/CatPrep";
 import MafiaCard from "@/components/shared/MafiaCard";
 import Start from "@/components/shared/Start";
 import Stories from "@/components/shared/Stories";
@@ -15,6 +16,7 @@ export default function Home() {
       <MafiaCard />
        <TruthPage  /> 
       <Stories />
+      <CatPrep />
     </div>
   );
 }
