@@ -1,6 +1,7 @@
+import Image from "next/image";
 export default function MafiaCard() {
   return (
-    <div className="flex text-white min-h-screen w-full bg-[rgb(20,21,19)] justify-center items-center p-4 sm:p-6 lg:p-8">
+    <div className="flex text-white min-h-screen w-full bg-[rgb(20,21,19)] justify-center items-center p-4 sm:p-6 lg:p-8 lg:pt-32">
       {/* Main Container */}
       <div className="flex flex-col lg:flex-row w-full max-w-[1313px] gap-0 relative">
 
@@ -9,8 +10,16 @@ export default function MafiaCard() {
         {/* Left Section */}
         <div className="w-full lg:w-[656.5px] h-[500px] sm:h-[550px] md:h-[600px] lg:h-[778px] lg:-mt-[80px] relative">
           {/* Vector 2520 - Hidden on mobile */}
-          <div className="hidden lg:block absolute w-[41px] h-[66px] left-[525px] top-0 bg-[rgba(241,188,64,1)] z-10" />
-          
+          {/* <div className="hidden lg:block absolute w-[41px] h-[66px] left-[525px] top-0 bg-[rgba(241,188,64,1)] z-10" /> */}
+          <div className="hidden lg:block absolute left-[525px] top-0 z-10">
+            <Image
+              src="/assests/icons/vector 2520.svg"
+              alt="Vector"
+              width={41}
+              height={66}
+              className="w-[41px] h-[66px]"
+            />
+          </div>
           {/* Rectangle 3464291 */}
           <div className="absolute w-[6px] sm:w-[8px] lg:w-[10px] h-full lg:h-[618px] left-[16px] sm:left-[24px] lg:left-[31px] bg-[rgba(19,68,104,1)]" />
           
