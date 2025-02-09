@@ -9,7 +9,7 @@ import TruthPage from "@/components/shared/TruthPage";
 
 export default function Home() {
   return (
-    <div className=" w-full bg-[rgb(20,21,19)] text-white mt-50 min-h-screen">
+    <div className=" w-full bg-[rgb(20,21,19)] text-white  min-h-screen">
       {/* <Start /> */} 
 
       <MafiaCard />
