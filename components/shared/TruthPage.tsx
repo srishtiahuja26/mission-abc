@@ -1,18 +1,17 @@
 
-import { Star, Eye, Mic2 } from 'lucide-react';
 import Image from 'next/image';
 
 const truthCards = [
   {
-    icon: Star,
+    icon: '/assests/icons/star.svg',
     content: 'I turn away students who lack the hunger for IIM A, B, or C.'
   },
   {
-    icon: Eye,
+    icon: '/assests/icons/paisa.svg',
     content: "I won't take your money if you're not serious."
   },
   {
-    icon: Mic2,
+    icon: '/assests/icons/mic.svg',
     content: 'I believe in brutal honesty—not sugar-coated dreams.'
   }
 ];
@@ -39,61 +38,33 @@ const lies = [
 const TruthPage = () => {
   return (
     <div className="flex flex-col min-h-screen">
-      <div style={{ marginTop: '60px'}}>
-        <h1 style={{ textAlign: 'center', fontSize: '48px', fontWeight: 'bold', fontFamily: 'Qanelas Soft' }}>
+      <div className="mt-[60px]">
+        <h1 className="text-center text-[48px] font-bold font-[Qanelas Soft]">
           The lies of the CAT Mafia
         </h1>
-        <p style={{ textAlign: 'center', fontSize: '30px', fontFamily: 'Qanelas Soft' }}>
+        <p className="text-center text-[30px] font-[Qanelas Soft]">
           The coaching industry profits off your fear. They'll tell you
         </p>
       </div>    
 
-      <section style={{ 
-        display: 'flex', 
-        justifyContent: 'center', 
-        alignItems: 'center',
-        height: '569px',
-        marginTop: '80px',
-        marginBottom: '100px',
-        position: 'relative'
-      }}>
-        <div style={{ position: 'relative', width: '928px', height: '569px' }}>
+      <section className="flex justify-center items-center h-[569px] mt-[80px] mb-[100px] relative">
+        <div className="relative w-[928px] h-[569px]">
           <Image 
             src="/girl.png" 
             alt="Reference image" 
             fill
-            style={{ 
-              objectFit: 'cover',
-              borderRadius: '12px' 
-            }} 
+            className="object-cover rounded-[12px]"
           />
           {lies.map((lie, index) => (
             <div
               key={lie.id}
-              style={{
-                position: 'absolute',
-                background: 'rgba(40, 40, 40, 0.55)',
-                border: '1px solid rgba(62, 62, 62, 1)',
-                backdropFilter: 'blur(52.4px)',
-                WebkitBackdropFilter: 'blur(52.4px)',
-                padding: '16px 24px',
-                borderRadius: '8px',
-                color: 'white',
-                fontFamily: 'Qanelas Soft',
-                ...getPositionStyle(index)
-              }}
+              className="absolute bg-[rgba(40,40,40,0.55)] border border-[rgba(62,62,62,1)] backdrop-blur-[52.4px] p-[16px_24px] rounded-[8px] text-white font-[Qanelas Soft]"
+              style={getPositionStyle(index)}
             >
-              <div style={{ 
-                color: '#FFB85C', 
-                fontSize: '14px', 
-                marginBottom: '4px' 
-              }}>
+              <div className="text-[#FFB85C] text-[14px] mb-1">
                 Lies {lie.id}
               </div>
-              <div style={{ 
-                fontSize: '16px',
-                maxWidth: '220px'
-              }}>
+              <div className="text-[16px] max-w-[220px]">
                 {lie.text}
               </div>
             </div>
@@ -101,68 +72,36 @@ const TruthPage = () => {
         </div>
       </section>
 
-      {/* Truth Section */}
-      <div style={{
-        maxWidth: '1920px',
-        height: '243px',
-        margin: '0 auto',
-        padding: '0 120px'
-      }}>
-        <h2 className='text-center' style={{
-          fontFamily: 'Qanelas Soft',
-          fontWeight: 500,
-          fontSize: '24px',
-          lineHeight: '28.97px',
-          letterSpacing: '0%',
-          color: 'rgba(241, 188, 64, 1)',
-          marginBottom: '32px',
-          whiteSpace: 'nowrap'
-        }}>
+      <div className="max-w-[1920px] h-[243px] mx-auto px-[120px]">
+        <h2 className="text-center font-[Qanelas Soft] font-medium text-[24px] leading-[28.97px] text-[rgba(241,188,64,1)] mb-8 whitespace-nowrap">
           HERE'S THE TRUTH
         </h2>
 
-        <div style={{
-          display: 'flex',
-          justifyContent: 'center',
-          gap: '32px',
-          marginTop: '32px'
-        }}>
-          {truthCards.map((card, index) => {
-            const IconComponent = card.icon;
-            return (
-              <div
-                key={index}
-                style={{
-                  width: '370.67px',
-                  height: '166px',
-                  borderRadius: '8px',
-                  padding: '24px 16px',
-                  background: 'rgba(241, 188, 64, 0.13)',
-                  display: 'flex',
-                  flexDirection: 'column',
-                  gap: '16px',
-                  alignItems: 'flex-start'
-                }}
-              >
-                <IconComponent size={24} color="#F1BC40" />
-                <p style={{
-                  fontFamily: 'Qanelas Soft',
-                  fontSize: '18px',
-                  color: '#FFFFFF',
-                  margin: 0
-                }}>
-                  {card.content}
-                </p>
+        <div className="flex justify-center gap-8 mt-8">
+          {truthCards.map((card, index) => (
+            <div
+              key={index}
+              className="w-[370.67px] h-[166px] rounded-[8px] p-[24px_16px] bg-[rgba(241,188,64,0.13)] flex flex-col gap-4 items-start"
+            >
+              <div className="relative w-6 h-6">
+                <Image 
+                  src={card.icon}
+                  alt="Icon"
+                  fill
+                  className="object-contain"
+                />
               </div>
-            );
-          })}
+              <p className="font-[Qanelas Soft] text-[18px] text-white m-0">
+                {card.content}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </div>
   );      
 };
 
-// Helper function to position the cards around the image
 const getPositionStyle = (index: number) => {
   const positions = [
     { top: '70%', right: '-10%' },  

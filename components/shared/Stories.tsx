@@ -40,10 +40,10 @@ const Stories = () => {
   }, []);
 
   return (
-    <div className="relative w-[1440px] h-[832px] mx-auto mt-[5136px]">
+    <div className="relative w-full min-h-screen px-4 sm:px-6 lg:px-8 mx-auto mt-20 lg:mt-[120px]">
       {/* Background with gradient overlay */}
       <div 
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0"
         style={{
           backgroundImage: 'linear-gradient(180deg, rgba(20, 21, 19, 0.7) 0%, rgba(20, 21, 19, 0.7) 100%)',
           backgroundColor: 'rgb(20, 21, 19)'
@@ -51,13 +51,13 @@ const Stories = () => {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center pt-20">
-      <h2 
-          className="text-[64px] text-center mb-4"
+      <div className="relative z-10 flex flex-col items-center">
+        <h2 
+          className="text-3xl md:text-5xl lg:text-[64px] text-center mb-4 px-4"
           style={{
             fontFamily: 'Qanelas Soft',
             fontWeight: 600,
-            lineHeight: '70.4px',
+            lineHeight: '1.1',
             letterSpacing: '-1px',
             background: 'linear-gradient(97.33deg, #FFFFFF 3.33%, #989898 96.01%)',
             WebkitBackgroundClip: 'text',
@@ -68,11 +68,11 @@ const Stories = () => {
           Sharing our stories
         </h2>
         <p 
-          className="text-[32px] text-center mb-16"
+          className="text-xl md:text-2xl lg:text-[32px] text-center mb-8 lg:mb-16 px-4"
           style={{
             fontFamily: 'Qanelas Soft',
             fontWeight: 400,
-            lineHeight: '38.08px',
+            lineHeight: '1.2',
             letterSpacing: '-0.02em',
             color: 'rgba(242, 242, 242, 1)'
           }}
@@ -92,22 +92,22 @@ const Stories = () => {
             {[...stories, ...stories].map((story, index) => (
               <div
                 key={`${story.id}-${index}`}
-                className="relative flex-shrink-0"
+                className="relative flex-shrink-0 px-2"
                 style={{
-                  width: 'calc(100% / 5)', // Show 5 items at once (3 full + 2 partial)
+                  width: 'calc(100vw / 1.2)',
+                  maxWidth: 'calc(100% / 3)',
+                  minWidth: '280px',
                 }}
               >
-                <div className="px-2">
-                  <div className="relative w-full h-[500px] rounded-2xl overflow-hidden">
-                    <Image
-                      src={story.image}
-                      alt={`Success story ${index + 1}`}
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1440px) 20vw"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 opacity-30" />
-                  </div>
+                <div className="relative w-full pt-[125%] rounded-2xl overflow-hidden">
+                  <Image
+                    src={story.image}
+                    alt={`Success story ${index + 1}`}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/50 opacity-30" />
                 </div>
               </div>
             ))}
