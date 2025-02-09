@@ -13,7 +13,7 @@ const NavBar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <Image 
-              src="/logo.png" 
+              src="/assests/images/logo.png" 
               alt="Logo" 
               width={96} 
               height={79}

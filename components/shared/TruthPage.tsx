@@ -50,7 +50,7 @@ const TruthPage = () => {
       <section className="flex justify-center items-center h-[569px] mt-[80px] mb-[100px] relative">
         <div className="relative w-[928px] h-[569px]">
           <Image 
-            src="/girl.png" 
+            src="/assests/images/girl.png" 
             alt="Reference image" 
             fill
             className="object-cover rounded-[12px]"

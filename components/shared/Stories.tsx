@@ -5,23 +5,23 @@ import Image from 'next/image';
 const stories = [
   {
     id: 1,
-    image: "/person1.png", 
+    image: "/assests/images/person1.png", 
   },
   {
     id: 2,
-    image: "/person2.png",
+    image: "/assests/images/person2.png",
   },
   {
     id: 3,
-    image: "/person5.png",
+    image: "/assests/images/person5.png",
   },
   {
     id: 4,
-    image: "/person4.png",
+    image: "/assests/images/person4.png",
   },
   {
     id: 5,
-    image: "/person3.png",
+    image: "/assests/images/person3.png",
   }
 ];
 
