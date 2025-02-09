@@ -92,7 +92,7 @@ const Stories = () => {
             {[...stories, ...stories].map((story, index) => (
               <div
                 key={`${story.id}-${index}`}
-                className="relative flex-shrink-0 px-2"
+                className={`relative flex-shrink-0 ${index % stories.length === Math.floor(stories.length / 2) ? 'px-10' : 'px-2'}`}
                 style={{
                   width: 'calc(100vw / 1.2)',
                   maxWidth: 'calc(100% / 3)',
@@ -114,9 +114,7 @@ const Stories = () => {
           </div>
 
           {/* Gradient overlays for cut-off effect */}
-          <div className="absolute top-0 left-0 w-[15%] h-full bg-gradient-to-r from-[rgb(20,21,19)] to-transparent pointer-events-none" />
-          <div className="absolute top-0 right-0 w-[15%] h-full bg-gradient-to-l from-[rgb(20,21,19)] to-transparent pointer-events-none" />
-        </div>
+       </div>
       </div>
     </div>
   );

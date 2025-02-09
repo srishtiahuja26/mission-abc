@@ -5,15 +5,25 @@
 @tailwind utilities;
 
 :root {
-  --background: #171415;  
+  --background: #171415;
   --foreground: #171717;
 }
+
+.bg-grad-yellow {
+  background: linear-gradient(99.53deg, #FFDD8F 3.24%, #E2B95A 79.42%);
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #171415;
     --foreground: #ededed;
   }
+}
+
+.bg-grad {
+  background: linear-gradient(179.91deg, #111111 0.08%, #282828 82.91%);
+
 }
 
 
@@ -30,8 +40,9 @@
   font-weight: 500;
   font-style: normal;
 }
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Qanelas Soft','inter', sans-serif;
+  font-family: 'Qanelas Soft', 'inter', sans-serif;
 }
